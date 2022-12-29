@@ -1,0 +1,1523 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@400;500&family=Tangerine:wght@700&family=Zen+Loop&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Birthstone+Bounce&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Sassy+Frass&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Petemoss&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap');
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,
+legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,
+hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,ul {
+  list-style: none;
+}
+blockquote,q {
+  quotes: none;
+}
+blockquote:before,blockquote:after,q:before,q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++ */
+
+body,html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100%;
+  width: 100%;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: rgb(0, 0, 0);
+  background-color: rgb(125, 125, 125);
+  background: radial-gradient(circle,rgb(255, 255, 255) 30%,rgb(219, 219, 219) 100%);
+}
+
+/* * {
+  box-sizing: border-box;
+} */
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.b {
+  font-weight: 500;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++P.Principal+++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.pantalla-principal { 
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: center;
+  background-image: url(Fotos/Fondo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+}
+
+.pantalla-principal h1 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 100 !important;
+  letter-spacing: 5px;
+  color: white;
+  font-size: 4.4em;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgb(73, 73, 73);
+}
+
+.enlaces-principal {
+  flex: 100%;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 25%;
+  margin-top: 0;
+  padding-top: 0;
+  flex-wrap: wrap;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.enlaces-principal li a {
+  font-size: 1.5em;
+  font-weight: 300;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 1px grey;
+}
+
+.enlaces-principal li a:hover {
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+.descubrenos {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  flex: 100%;
+  position: absolute;
+  height: 10%;
+  align-items: center;
+  justify-content: center;
+  bottom: 2%;
+}
+
+.descubrenos a {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.foto-descubrenos {
+  width: 40px;
+  height: 40px;
+  min-height: 40px;
+  background-image: url(Fotos/Flechas.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++SOBRE NOSOTROS+++++++++++++++++++++++++++++++++++++++++++++++++*/
+.about-us{
+  width: 100%;
+  height: auto;
+}
+
+.que-somos {
+  display: flex;
+  height: auto;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.palabraImportante {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Tangerine";
+  letter-spacing: 4px;
+  font-weight: 700;
+  font-size: 5.2em;
+  color: rgba(0, 0, 0, 0.9);
+  padding-top: 80px;
+}
+
+.desc-palabra {
+  position: relative;
+  width: 48%;
+  height: 60%;
+  line-height: 32px;
+  font-weight: 200;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  font-size: 1.28em;
+}
+
+.separador{
+  position: relative;
+}
+
+.separador::before {
+  position: absolute;
+  bottom: 0;
+  content: "";
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  width: 25%;
+  height: 1%;
+  left: 38%;
+}
+
+.desc-final {
+  padding-bottom: 60px;
+}
+
+.foto-extra {
+  width: 100%;
+  height: 400px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foto-restaurante {
+  height: 100%;
+  width: 40%;
+  background-image: url("Fotos/Fondo2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  height: 30%;
+  min-height: 200px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5px;
+  flex-wrap: nowrap;
+  color: rgb(255, 255, 255) !important;
+  padding-top: 70px;
+  background-image: url("Fotos/borde.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+footer .enlaces-footer {
+  display: flex;
+  align-items: center;
+  width: 33%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+footer .enlaces-footer a {
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  font-size: 1.1em;
+}
+
+footer .contactos-footer {
+  display: flex;
+  width: 33%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.twitter {
+  width: 40px;
+  height: 40px;
+  background-image: url("Fotos/Twitter.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  cursor: pointer;
+}
+
+.instagram {
+  width: 40px;
+  height: 40px;
+  background-image: url("Fotos/Instagram.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  cursor: pointer;
+}
+
+.facebook {
+  width: 40px;
+  height: 40px;
+  background-image: url("Fotos/Facebook.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  cursor: pointer;
+}
+
+footer .footer-copy {
+  bottom: 5px;
+  font-size: 0.7em;
+  display: flex;
+  justify-content: center;
+  width: 24%;
+  height: 20%;
+  position: absolute;
+  bottom: 0;
+  align-items: flex-end;
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++NUESTRA COCINA+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.equipoPrincipal {
+  display: flex;
+  width: 100%;
+  height: 97%;
+  min-height: 600px;
+  background-image: url("Fotos/FondoEquipo3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-position: center center;
+}
+
+.contenedor-tituloEquipo {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  height: 100%;
+  width: 13%;
+  min-width: 80px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.titulo-equipo {
+  height: 100%;
+  min-height: 550px;
+  writing-mode: vertical-lr;
+  font-family: "Kanit";
+  font-weight: 100;
+  color: white;
+  font-size: 5em;
+  letter-spacing: 3px;
+  transform: rotate(-180deg);
+}
+
+.nav-equipo {
+  background-color: rgba(0, 0, 0);
+  width: 100%;
+  height: 4%;
+  min-height: 40px;
+  display: flex; 
+}
+
+.enlaces-equipo {
+  width: 100%;
+  height: 4%;
+  min-height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.enlaces-equipo li a {
+  color: white !important;
+  font-size: 1.1em;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px grey;
+}
+
+.enlaces-equipo li a:hover {
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
+}
+
+.cocineros {
+  width: 100%;
+  height: auto;
+  min-height: 700px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.intro-cocineros {
+  width: 100%;
+  height: 20%;
+  padding-top: 30px;
+  padding-bottom: 120px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center; 
+  justify-content: center;
+}
+
+.texto-intro-cocineros {
+  font-size: 1.1em;
+  font-weight: 300;
+  line-height: 30px;
+  width: 50%;
+  height: 100%;
+}
+
+.desc-cocineros {
+  width: 100%;
+  height: auto;
+  min-height: 680px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.letras-tipo1 {
+  transform: rotate(360deg);
+  color: white;
+}
+
+.letras-tipo2 {
+  transform: rotate(360deg);
+  color: white;
+}
+
+.letras-tipo3 {
+  transform: rotate(360deg);
+  color: white;
+}
+
+.nombre-cocinero {
+  color: white;
+  font-family: "Kanit";
+  font-weight: 300;
+  font-size: 1.6em;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.palabras {
+  width: 80%;
+  height: 47%;
+  margin-top: 20px;
+  margin-left: 40px;
+  color: white;
+  font-family: "Kanit";
+  font-weight: 100;
+  font-size: 1.25em;
+  text-align: justify;
+  line-height: 24px; 
+}
+
+/* ++++++COCINERO-1+++++++ */
+
+.contenedor-blanco1 {
+  width: 50px;
+}
+
+.pic-cocinero1 {
+  height: 490px;
+  width: 350px;
+  min-height: 300px;
+  min-width: 200px;
+
+  background-image: url("Fotos/Bob.jpg");
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-position: center center;
+  background-size: cover;
+}
+
+.txt-cocinero1 {
+  height: 370px;
+  width: 690px;
+  min-height: 30px;
+
+  background-color: rgba(0, 0, 0, .9);
+  background: linear-gradient(rgba(0, 0, 0, .9) 10%, rgba(26, 26, 26, 0.9) 100%);
+
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
+}
+
+.tipo-cocinero1 {
+  width: 80px;
+  height: 490px;
+  font-family: "Kanit";
+  font-weight: 100 !important;
+  font-size: 3em;
+  writing-mode: vertical-rl;
+  background-color: rgba(0, 0, 0, .9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.firma1 {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 98px;
+  padding-right: 10px;
+  font-size: 2.8em;
+  color: white;
+  font-family: "Birthstone Bounce";
+  font-weight: 400;
+}
+
+/* ++++++COCINERO-2+++++++ */
+
+.contenedor-blanco2 {
+  width: 50px;
+}
+
+.pic-cocinero2 {
+  height: 490px;
+  width: 350px;
+  min-height: 300px;
+  min-width: 200px;
+  margin-top: 140px;
+  background-image: url("Fotos/Luisa.jpg");
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.txt-cocinero2 {
+  height: 370px;
+  width: 690px;
+  min-height: 30px;
+  background-color: rgba(0, 0, 0, .9);
+  background: linear-gradient(rgba(0, 0, 0, .9) 10%, rgba(26, 26, 26, 0.9) 100%);
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+}
+
+.tipo-cocinero2 {
+  width: 80px;
+  height: 490px;
+  margin-top: 140px;
+  font-family: "Kanit";
+  font-weight: 100 !important;
+  font-size: 3em;
+  writing-mode: vertical-rl;
+  background-color: rgba(0, 0, 0, .9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.firma2 {
+
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 98px;
+  padding-right: 4px; 
+  font-size: 3em;
+  color: white;
+  font-family: "Great Vibes";
+  font-weight: 400;
+}
+
+/* ++++++COCINERO-3+++++++ */
+
+.contenedor-blanco3 {
+  width: 5px;
+}
+
+.pic-cocinero3 {
+  height: 490px;
+  width: 350px;
+  min-height: 300px;
+  min-width: 200px;
+  margin-top: 150px;
+  background-image: url("Fotos/Charles.jpg");
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-position: center center;
+  background-size: cover;
+}
+
+.txt-cocinero3 {
+  height: 370px;
+  width: 690px;
+  min-height: 30px;
+  background-color: rgba(0, 0, 0, .9);
+  background: linear-gradient(rgba(0, 0, 0, .9) 10%, rgba(26, 26, 26, 0.9) 100%);
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+}
+
+.tipo-cocinero3 {
+  width: 80px;
+  height: 490px;
+  margin-top: 150px;
+  font-family: "Kanit";
+  font-weight: 100 !important;
+  font-size: 3.2em;
+  writing-mode: vertical-rl;
+  background-color: rgba(0, 0, 0, .9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.firma3 {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 98px;
+  padding-right: 2px;
+  font-size: 3.7em;
+  color: white;
+  font-family: "Sassy Frass";
+  font-weight: 400;
+}
+
+.desc-equipo-final {
+  margin-bottom: 100px;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++CARTA++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+.cartaPrincipal {
+  display: flex;
+  width: 100%;
+  height: 97%;
+  min-height: 600px;
+  background-image: url("Fotos/Fondo3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-position: center center;
+}
+
+.contenedor-tituloCarta {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  height: 100%;
+  width: 13%;
+  min-width: 80px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.titulo-carta {
+  height: 100%;
+  min-height: 550px;
+  writing-mode: vertical-lr;
+  font-family: "Kanit";
+  font-weight: 100;
+  color: white;
+  font-size: 5em;
+  letter-spacing: 3px;
+  transform: rotate(-180deg);
+}
+
+.intro-carta {
+  width: 100%;
+  height: 20%;
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center; 
+  justify-content: center;
+}
+
+.texto-intro-carta {
+  font-size: 1.1em;
+  font-weight: 300;
+  line-height: 30px;
+  width: 50%;
+  height: auto;
+}
+
+.comidas-presentacion {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.platosPrincipales {
+  width: 100%;
+  height: 100%;
+}
+.apartados-carta {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  margin-top: 100px;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 130px;
+}
+
+.separador1, .separador2 {
+  width: 30%;
+  height: 2%;
+  position: relative;
+}
+
+.separador1::before, .separador2::before { 
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1%;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.titulo-comidas {
+  font-size: 4.7em;
+  font-family: "Petemoss";
+}
+
+.p-principales{
+  height: 50%;
+  min-height: 400px;
+}
+
+.intro-p-principales {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.vacio1, .vacio2 {
+  width: 10%;
+  min-width: 50px;
+  height: 100%;
+}
+
+.platosPPL {
+  width: 100%;
+  height: 100%;
+}
+
+.foto-p-principales {
+  width: 40%;
+  height: 100%;
+  min-height: 450px;
+  background-image: url("Fotos/fotoCarta1.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: content-box;
+}
+
+.desc-p-principales {
+  width: 40%;
+  height: 100%;
+  min-height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: justify;
+  background: linear-gradient(rgba(0, 0, 0, .9) 10%, rgba(26, 26, 26, 0.9) 100%);
+}
+
+.palabra-intro-carta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  line-height: 23px;
+  font-weight: 100;
+  width: 85%;
+  height: 30%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.ficha-platos {
+  width: 100%;
+  height: 83%;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  min-height: 300px;
+}
+
+.pic-plato1, .pic-plato2, .pic-plato3, .pic-plato4, .pic-plato5, .pic-plato6 {
+  height: 100%;
+  width: 15%;
+  min-width: 200px;
+  min-height: 300px;
+}
+
+.pic-plato1 {
+  background-image: url("Fotos/plato1.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: content-box;
+}
+
+.pic-plato2 {
+  background-image: url("Fotos/plato2.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: content-box;
+}
+
+.pic-plato3 {
+  background-image: url("Fotos/plato3.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: content-box;
+}
+
+
+.dec-plato1, .dec-plato2, .dec-plato3 {
+  width: 37%;
+  height: 80%;
+  min-height: 250px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(rgba(0, 0, 0, .9) 10%, rgba(26, 26, 26, 0.9) 100%);
+}
+
+.intro-postres {
+  padding-top: 50px;
+}
+
+.palabras-dec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  font-size: 1.2em;
+  line-height: 23px;
+  font-weight: 100;
+  width: 85%;
+  height: 30%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.menu-degustacion {
+  width: 100%;
+  height: 100%;
+}
+
+.intro-menus {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding-top: 70px;
+  justify-content: space-around;
+}
+
+.comm-menus{
+  width: 100%;
+  height: 30%;
+  min-height: 70px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* padding-bottom: 50px; */
+}
+
+.palabra-com-menu {
+  height: 100%;
+  width: 50%;
+  min-height: 70px;
+  font-size: 1.1em;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.menu-1 {
+  width: 35%;
+  height: 100%;
+  min-width: 280px;
+  min-height: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: justify;
+  background: linear-gradient(rgba(0, 0, 0, .9) 10%, rgba(26, 26, 26, 0.9) 100%);
+}
+
+.menu-2 {
+  width: 35%;
+  height: 100%;
+  min-width: 280px;
+  min-height: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: justify;
+  background: linear-gradient(rgba(0, 0, 0, .9) 10%, rgba(26, 26, 26, 0.9) 100%);
+}
+
+.palabra-menu {
+  width: 80%;
+  height: 80%;
+  min-height: 300px;
+  font-weight: 100;
+  font-size: 1.3em;
+}
+
+.nomMenu {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 25px;
+  font-size: 3em;
+  font-family: "Zen Loop";
+}
+
+.contenidosMenu {
+  line-height: 23px;
+}
+
+.fotos-menu {
+  margin-top: 70px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.menu1-foto-1, .menu2-foto-1, .menu1-foto-2,.menu2-foto-2, .menu1-foto-3, .menu2-foto-3 {
+  margin-top: 60px;
+  width: 35%;
+  height: 16.6%;
+  min-width: 420px;
+  min-height: 420px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: content-box;
+}
+
+.menu1-foto-1 {
+  background-image: url("Fotos/pad-thai-gambas.jpg");
+}
+
+.menu1-foto-2 {
+  background-image: url("Fotos/sopa-tom-yun-goong-picante.jpg");
+}
+
+.menu1-foto-3 {
+  background-image: url("Fotos/ensalada-papaya.jpg");
+}
+
+.menu2-foto-1 {
+  background-image: url("Fotos/bhelpuri.jpg");
+}
+
+.menu2-foto-2 {
+  background-image: url("Fotos/samosa.jpg");
+}
+
+.menu2-foto-3 {
+  background-image: url("Fotos/tikka-masala.jpg");
+}
+
+.foto-postres {
+  width: 40%;
+  height: 100%;
+  min-height: 450px;
+  background-image: url("Fotos/fotoPostre5.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: content-box;
+}
+
+.pic-plato4 {
+  background-image: url("Fotos/fotoPostre1.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: content-box;
+}
+
+.pic-plato5 {
+  background-image: url("Fotos/fotoPostre2.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: content-box;
+}
+
+.pic-plato6 {
+  background-image: url("Fotos/fotoPostre3.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: content-box;
+}
+
+.plato-final {
+  padding-bottom: 100px;
+}
+
+/* +++++++++++++++++++++++++++++++RESERVAS+++++++++++++++++++++++++++++++++++++ */
+
+.reservas {
+  width: 100%;
+  height: 150%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+
+  
+}
+
+.form-reservas-contenedor {
+  width: 50%;
+  height: 40%;
+  min-height: 470px;
+  min-width:400px;
+  padding-top: 50px;
+  background-image: url("Fotos/fondo9.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: content-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 200;
+  font-size: 1.3em;
+  line-height: 25px;
+}
+
+input[type=text] {
+  background-color: transparent;
+  width: 200px;
+  border: none;
+  border-bottom: 1px solid white;
+}
+
+::placeholder {
+  font-size: 1.2em;
+  color: white;
+  opacity: 1;
+}
+
+:-ms-input-placeholder { 
+  color: white;
+ }
+
+ ::-ms-input-placeholder {
+  color: white;
+ }
+
+.palabra-titulo-reservas {
+  font-size: 5em;
+  font-weight: 200;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.mapa-reservas {
+  padding-top: 50px;
+  width: 50%;
+  height: 40%;
+  min-height: 300px;
+  min-width:400px;
+}
+
+iframe {
+  filter: invert(80%);
+  width: 100%;
+  height: 100%;
+}
+
+input[type=submit] {
+  background-color: whitesmoke;
+  color: rgb(0, 0, 0);
+  font-size: 100;
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-top: -70px;
+
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++MEDIAS+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++P.Principal++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media screen and (max-width: 1252px) {
+  body {
+    height: 100%;
+  }
+
+  .pantalla-principal {
+    min-height: 600px;
+  }
+
+  .about-us {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .foto-restaurante {
+    width: 80%;
+  }
+
+}
+
+@media screen and (max-width: 870px) {
+  body {
+    height: 100%;
+  }
+
+  .pantalla-principal {
+    min-height: 600px;
+  }
+
+  .enlaces-principal {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin: 0;
+    height: 90%;
+    min-height: 90%;
+  }
+
+  .enlaces-principal li h1 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    padding-top: 6px;
+    align-self: stretch;
+    order: 1;
+  }
+
+  .enlaces-principal li h1::before {
+    content: "";
+    position: absolute;
+    border-bottom: 0.2px solid rgba(255, 255, 255, 0.6);
+    width: 60%;
+    height: 2%;
+    min-height: 2%;
+    bottom: -50px;
+    left: 21%;
+  }
+
+  .enlaces-principal li a {
+    font-size: 1.35em;
+  }
+
+  .enlaces-principal li:nth-child(1) {
+    padding-top: 100px;
+    order: 2;
+  }
+
+  .enlaces-principal li:nth-child(2) {
+    padding-top: 60px;
+    order: 3;
+  }
+
+  .enlaces-principal li:nth-child(4) {
+    padding-top: 60px;
+    order: 4;
+  }
+
+  .enlaces-principal li:nth-child(5) {
+    padding-top: 60px;
+    order: 5;
+  }
+
+  .descubrenos {
+    position: absolute;
+    height: 7%;
+    min-height: 7%;
+    align-items: center;
+    justify-content: center;
+    bottom: 5px;
+    padding: 0;
+  }
+
+  .descubrenos a {
+    font-size: 0.6em;
+  }
+
+  .foto-descubrenos {
+    width: 35px;
+    height: 35px;
+    min-height: 35px;
+    background-image: url(Fotos/Flechas.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+  }
+
+  .palabraImportante {
+    font-size: 4.7em;;
+  }
+
+  .desc-palabra {
+    width: 100%;
+    padding-right: 50px;
+    padding-left: 50px;
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  body {
+    height: 100%;
+  }
+
+  .pantalla-principal {
+    min-height: 600px;
+  }
+
+  .enlaces-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .descubrenos {
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    height: 25%;
+    min-height: 150px;
+    font-size: 0.6em;
+  }
+  
+  .twitter, .instagram, .facebook {
+    width: 35px;
+    height: 35px;
+  }
+
+  footer .enlaces-footer {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.1em;
+    width: 43%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+
+  footer .contactos-footer {
+    display: flex;
+    margin: 0;
+    padding-left: 20px;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.1em;
+    width: 45%;
+    text-align: center;
+  }
+
+  footer .footer-copy {
+    width: 35%;
+    font-size: 0.005em;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+}
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++EQUIPO++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media screen and (max-width:1200px) {
+  .contenedor-blanco1, .contenedor-blanco2, .contenedor-blanco3 {
+    display: none;
+  }
+
+  .txt-cocinero1, .txt-cocinero2, .txt-cocinero3 {
+    width: 35%;
+    height: 70%;
+    padding-right: 20px;
+  }
+
+  .palabras {
+    margin-right: 40px;
+    height: 40%;
+    font-size: 0.9em;
+  }
+
+  .firma1, .firma2, .firma3 {
+    margin: 0;
+    padding: 0;
+    padding-top: 120px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pic-cocinero1, .pic-cocinero2, .pic-cocinero3 {
+    width: 250px;
+    height: 350px;
+  }
+
+  .tipo-cocinero1, .tipo-cocinero2, .tipo-cocinero3 {
+    font-size: 1.9em;
+    height: 350px;
+  }
+
+}
+
+@media screen and (max-width:810px) {
+
+  .titulo-equipo {
+    font-size: 2.7em;
+  }
+  
+  .intro-cocineros {
+    padding-bottom: 0px;
+    text-align: justify;
+  }
+  
+  .texto-intro-cocineros {
+    width: 100%;
+    margin-left: 40px;
+    margin-right: 40px;
+    min-width: 0px;
+  }
+
+  .desc-cocineros {
+    margin-top: 70px;
+  }
+
+  .contenedor-blanco1, .contenedor-blanco2, .contenedor-blanco3 {
+    display: none;
+  }
+
+  .pic-cocinero1, .pic-cocinero2, .pic-cocinero3 {
+    width: 250px;
+    height: 350px;
+    margin-top: 0;
+    order: 1;
+  }
+
+  .tipo-cocinero1, .tipo-cocinero2, .tipo-cocinero3 {
+    font-size: 1.8em;
+    height: 350px;
+    margin-top: 0;
+    order: 2;
+  }
+
+  .nombre-cocinero {
+    margin-top: 10px;
+  }
+
+  .txt-cocinero1, .txt-cocinero2, .txt-cocinero3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-weight: 300;
+    order: 3;
+    width: 100%;
+    height: 40%;
+    font-size: 0.9em;
+  }
+
+  .palabras {
+    width: 100%;
+    height: 51%;
+    margin-left: 0;
+    line-height: 17px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .firma1, .firma2 {
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+  }
+
+  .firma3 {
+    font-size: 3.9em;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++CARTA++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media screen and (max-width:1075px) {
+  .vacio1, .vacio2 {
+    width: 5%;
+  }
+}
+
+@media screen and (max-width:1060px) {
+  .texto-intro-carta {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 70px;
+    text-align: justify;
+  }
+  
+  .titulo-comidas{
+    font-size: 1.9em;
+  }
+
+  .contenidosMenu {
+    font-size: 0.8em;
+    line-height: 23px;
+    text-align: center;
+    padding-top: 25px;
+    /* text-align: justify; */
+  }
+  
+  .vacio-fotosMenu {
+    display: none;
+  }
+
+  .menu-1, .menu-2 {
+    width: 45%;
+  }
+
+  .foto-p-principales, .foto-postres {
+    width: 50%;
+  }
+
+  .desc-p-principales {
+    width: 50%;
+    font-size: 0.9em;
+    text-align: left;
+  }
+  
+  .separador1, .separador2 {
+    width: 25%;
+  }
+  .palabras-dec {
+    font-size: 0.8em;
+    font-weight: 200;
+  }
+
+}
+
+@media screen and (max-width:725px) {
+  .vacio1, .vacio2 {
+    display: none;
+  }
+
+  .palabras-dec {
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 0.8em;
+    line-height: 15px;
+    height: 200px;
+  }
+
+  .dec-plato1, .dec-plato2, .dec-plato3 {
+    min-height: 300px;
+    width: 45%;
+  }
+
+  .intro-menus {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .menu-1, .menu-2 {
+    font-size: 1.2em;
+    line-height: 27px;
+    width: 100%;
+    height: 50%;
+  }
+
+  .menu-2 {
+    margin-top: 50px;
+  }
+
+  .palabra-com-menu {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+
